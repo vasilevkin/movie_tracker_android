@@ -10,4 +10,6 @@ public class Constants {
 
     static final int THREAD_COUNT = 5;
     public static final int PAGE_SIZE = 20;
+
+    public static final int DEFAULT_ID = -1;
 }
