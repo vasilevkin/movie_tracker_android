@@ -5,8 +5,8 @@ import java.util.Objects;
 import com.google.gson.annotations.SerializedName;
 
 public class Movie {
-    @SerializedName("movieId")
-    private long movieId;
+    @SerializedName("id")
+    private long id;
 
     @SerializedName("title")
     private String title;
@@ -49,7 +49,7 @@ public class Movie {
             return false;
 
         Movie movie = (Movie) object;
-        return movieId == movie.movieId
+        return id == movie.id
                 && Objects.equals(title, movie.title)
                 && Boolean.compare(adult, movie.adult) == 0
                 && budget == movie.budget
@@ -66,7 +66,7 @@ public class Movie {
     @Override
     public int hashCode() {
         return Objects.hash(
-                movieId,
+                id,
                 title,
                 adult,
                 budget,
@@ -81,12 +81,12 @@ public class Movie {
         );
     }
 
-    public long getMovieId() {
-        return movieId;
+    public long getId() {
+        return id;
     }
 
-    public void setMovieId(long movieId) {
-        this.movieId = movieId;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getTitle() {
