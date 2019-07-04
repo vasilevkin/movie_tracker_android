@@ -12,8 +12,8 @@ public class NetworkState {
         this.networkMessage = networkMessage;
     }
 
-    public static NetworkState error(String msg) {
-        return new NetworkState(Status.FAILED, msg);
+    public static NetworkState error(String message) {
+        return new NetworkState(Status.FAILED, message);
     }
 
     public Status getStatus() {
